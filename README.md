@@ -1,13 +1,13 @@
 # setup-action
 
-Install a specific version of helmwave binary on the runner.
+Install a specific version of the helmwave binary on the runner.
 
 Documentation: https://docs.helmwave.app
 
 ```yaml
 - uses: helmwave/setup-action@v0.3.0
   with:
-    version: '0.28.0'
+    version: '0.42.0'
   id: install
 ```
 
@@ -27,7 +27,7 @@ jobs:
       - uses: helmwave/setup-action@v0.3.0
         name: Install helmwave
         with:
-          version: '0.28.0'
+          version: '0.42.0'
       - run: helmwave --version
       - run: helmwave yml
       - run: helmwave up --build
